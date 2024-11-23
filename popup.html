@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+
+    <title>Appedle: LightLoom</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="dimmer-box">
+      <div class="dimmer-title-reset-box">
+        <h3>LightLoom</h3>
+        <button id="reset">Reset</button>
+      </div>
+
+      <!-- brightness slider -->
+      <div class="dimmer-slide-box">
+        <div class="dimmer-slider-label">Adjust Brightness</div>
+
+        <div class="dimmer-slider-box">
+          <div class="dimmer-slider-icon moon">
+            <i class="fi fi-rr-moon"></i>
+          </div>
+          <input
+            type="range"
+            id="brightness-slider"
+            min="0"
+            max="100"
+            value="100"
+          />
+          <div class="dimmer-slider-icon sun">
+            <i class="fi fi-rr-brightness"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- powered by Appedle -->
+      <div class="powered-by-box">
+        <p class="app-version">v0.1</p>
+
+        <p class="app-from">
+          A product from
+          <a href="https://appedle.com?utm_source=lightloom" target="_blank"
+            >Appedle</a
+          >
+        </p>
+
+        <div class="div"></div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
