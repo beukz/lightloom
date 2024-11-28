@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Appedle: LightLoom",
+    "name": "TUC: LightLoom",
     "version": "0.1",
     "description": "Control and save brightness settings for any webpage.",
     "action": {

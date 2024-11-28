@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Inter", sans-serif;
   src: url("font/Inter.ttc") format("truetype");
@@ -6,7 +12,14 @@
 }
 
 :root {
-  --font: "Inter", sans-serif;
+  --font: "Inter", sans-serif; --dBtnColor: #ff6b6b;
+  --divider: rgba(128, 128, 128, 0.705);
+  --defaultColor: rgb(133, 133, 133);
+  --appVersion: #b3b3b3;
+  --dBtnColor: #ff6b6b;
+  --dBtnColorHover: #ff4f4f;
+  --dBtnShadowColor: #f02626;
+
 }
 
 body {
@@ -19,7 +32,7 @@ body {
 
 /* dimmer box */
 .dimmer-box {
-  width: 250px;
+  width: 300px;
   padding: 10px 10px 0 10px;
 }
 
@@ -39,6 +52,7 @@ body {
 
 .dimmer-slide-box {
   /* border: 1px solid red; */
+  padding: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -97,8 +111,8 @@ body {
 
 /* Style for the reset button */
 #reset {
-  background-color: #ff6b6b;
-  border: 1px solid #ff6b6b;
+  background-color: var(--dBtnColor);
+  border: none;
   color: white;
   border-radius: 30px;
   padding: 10px 15px;
@@ -108,26 +122,50 @@ body {
 }
 
 #reset:hover {
-  background-color: #ff4f4f;
+  background-color: var(--dBtnColor);
+  box-shadow: inset 0 0 20px var(--dBtnShadowColor);
+  transition: all 0.3s ease-out;
 }
 
-/* powered by */
-.powered-by-box {
- margin: 50px 0 0 0;
- display: flex;
- align-items: center;
- justify-content: space-between;
+/* footer */
+.ap-sn-footer-box {
+  /* position: fixed; */
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  /* box-shadow: 0 0 5px var(--borderColor); */
+  margin: 40px 0 0 0;
+  /* font-family: var(--cFont); */
 }
 
-.powered-by-box p.app-from {
+.ap-sn-version-product {
+  display: flex;
+  align-items: center;
+}
+
+.ap-sn-divider {
+  margin: 0 10px;
+  height: 15px;
+  padding: 0.2px;
+  background-color: var(--divider);
+  color: var();
+}
+
+.ap-sn-footer-box p.app-from {
   font-size: 0.75rem;
+  color: var(--defaultColor);
 }
 
-.powered-by-box p a {
-  color: black;
+.ap-sn-footer-box p a {
+  color: var(--defaultColor);
 }
 
 .app-version {
-  color: #b3b3b3;
+  color: var(--appVersion);
   font-size: 0.6rem;
 }
