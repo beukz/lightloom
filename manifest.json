@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "TUC: LightLoom",
     "version": "0.1",
-    "description": "Control and save brightness settings for any webpage.",
+    "description": "Control and save brightness settings for any website.",
     "action": {
       "default_popup": "popup.html",
       "default_icon": "icon.png"
