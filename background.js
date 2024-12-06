@@ -1,2 +1,5 @@
-// background.js
-// Currently no background operations needed.
+chrome.runtime.onInstalled.addListener((details) => {
+    if (details.reason === 'install') {
+        chrome.tabs.create({ url: chrome.runtime.getURL('pages/installation.html') });
+    }
+});

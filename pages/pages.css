@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../font/Inter.ttc") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font: "Inter", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-box {
+  /* border: 1px solid grey; */
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  font-family: var(--font);
+}
+
+.body-box h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.body-box p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+#pin-instruction {
+  margin-top: 15px;
+  color: #444;
+  font-size: 1rem;
+}
+
+#pin-instruction i {
+    height: 50px;
+}
